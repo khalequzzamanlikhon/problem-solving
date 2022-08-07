@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    char FIRSTNAME[50];
+    double SALARY,SOLD,TOTAL;
+    scanf("%s",FIRSTNAME);
+    scanf("%lf%lf",&SALARY,&SOLD);
+    TOTAL=SALARY+((15*SOLD)/100);
+    printf("TOTAL = R$ %.2lf\n",TOTAL);
+    return 0;
+
+}
+
+//1009 - Salary with Bonus

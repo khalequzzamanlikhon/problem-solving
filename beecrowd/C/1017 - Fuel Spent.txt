@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int Time,Speed,Distance;
+    float Litres;
+    scanf("%d%d",&Time,&Speed);
+    Distance=(Speed*Time);
+    Litres=Distance/12.0;
+    printf("%.3lf\n",Litres);
+
+    return 0;
+}
+//1017 - Fuel Spent

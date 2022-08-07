@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+
+    int NUMBER,WORKHOURS;
+    float SALARY,RECEIVE;
+    scanf("%d%d",&NUMBER,&WORKHOURS);
+    scanf("%f",&RECEIVE);
+    SALARY=(WORKHOURS*RECEIVE);
+    printf("NUMBER = %d\n",NUMBER);
+    printf("SALARY = U$ %.2f\n",SALARY);
+
+
+
+    return 0;
+
+}
+
+//1008 - Salary

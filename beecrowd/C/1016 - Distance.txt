@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int X,Time;
+    scanf("%d",&X);
+    Time=(X*2);
+    printf("%d minutos\n",Time);
+
+    return 0;
+}
+
+//1016 - Distance

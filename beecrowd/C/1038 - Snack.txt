@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int X,Y;
+    int i;
+    int code[]= {1,2,3,4,5};
+    float price[]= {4.0,4.5,5.0,2.0,1.50},total=0;
+    scanf("%d%d",&X,&Y);
+    for(i=0; i<5; i++)
+    {
+        if(X==code[i])
+            total=Y*price[i];
+        else
+            continue;
+
+    }
+    printf("Total: R$ %.2f\n",total);
+
+    return 0;
+}
+
+//1038 - Snack

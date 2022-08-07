@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+
+int Time,Hour,Minute,Second;
+scanf("%d",&Time);
+Hour=Time/3600;
+Time=Time%3600;
+Minute=Time/60;
+Time=Time%60;
+Second=Time;
+printf("%d:%d:%d\n",Hour,Minute,Second);
+
+return 0;
+}
+
+//1019 - Time Conversion
