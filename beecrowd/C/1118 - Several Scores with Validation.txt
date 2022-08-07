@@ -1,0 +1,49 @@
+
+//1118 - Several Scores with Validation
+#include<stdio.h>
+int main()
+{
+    float x,average,sum=0;
+    int n,count=0;
+    while(1)
+    {
+        scanf("%f",&x);
+        if(x>=0&&x<=10)
+        {
+            count++;
+            sum+=x;
+            if(count==2)
+            {
+                average=sum/2;
+                printf("media = %.2f\n",average);
+                sum=0;
+                count=0;
+            }
+            else
+                continue;
+            printf("novo calculo (1-sim 2-nao)\n");
+            while(1)
+            {
+                scanf("%d",&n);
+                if(n<1||n>2)
+                {
+                    printf("novo calculo (1-sim 2-nao)\n");
+                    continue;
+                }
+                else
+                    break;
+            }
+            if(n==1)
+                continue;
+            else if(n==2)
+                break;
+        }
+
+
+        else
+            printf("nota invalida\n");
+
+    }
+
+    return 0;
+}

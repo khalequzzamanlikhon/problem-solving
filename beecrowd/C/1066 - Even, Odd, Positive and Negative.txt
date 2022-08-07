@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+
+    int number[5],even=0,odd=0,positive=0,negative=0,i;
+    for(i=0; i<5; i++)
+    {
+        scanf("%d",&number[i]);
+        if(number[i]==0)
+            even++;
+        else if(number[i]>=0)
+        {
+            positive++;
+            if(number[i]%2==0)
+            {
+                even++;
+            }
+            else
+                odd++;
+        }
+        else
+        {
+            negative++;
+            if(number[i]%2==0)
+            {
+                even++;
+            }
+            else
+                odd++;
+        }
+
+    }
+    printf("%d valor(es) par(es)\n%d valor(es) impar(es)\n%d valor(es) positivo(s)\n%d valor(es) negativo(s)\n",even,odd,positive,negative);
+    return 0;
+
+}
+
+//1066 - Even, Odd, Positive and Negative

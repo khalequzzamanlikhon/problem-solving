@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int N,i,square;
+    scanf("%d",&N);
+    for(i=2; i<=N; i=i+2)
+    {
+        square=pow(i,2);
+        printf("%d^2 = %d\n",i,square);
+    }
+    return 0;
+}
+
+//1073 - Even Square

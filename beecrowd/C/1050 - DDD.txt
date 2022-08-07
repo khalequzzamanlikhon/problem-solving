@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int code;
+    int D[8]={61,71,11,21,32,19,27,31};
+    scanf("%d",&code);
+    if(code==D[0])
+        printf("Brasilia\n");
+    else if(code==D[1])
+        printf("Salvador\n");
+    else if(code==D[2])
+        printf("Sao Paulo\n");
+    else if(code==D[3])
+        printf("Rio de Janeiro\n");
+    else if(code==D[4])
+        printf("Juiz de Fora\n");
+    else if(code==D[5])
+        printf("Campinas\n");
+    else if(code==D[6])
+        printf("Vitoria\n");
+    else if(code==D[7])
+        printf("Belo Horizonte\n");
+    else
+        printf("DDD nao cadastrado\n");
+
+
+
+    return 0;
+}
+
+//1050 - DDD

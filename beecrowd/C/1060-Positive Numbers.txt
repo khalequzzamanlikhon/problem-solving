@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int i,positive=0;
+    double n;
+    for(i=0; i<6; i++)
+    {
+        scanf("%lf",&n);
+        if(n>0)
+            positive++;
+    }
+    printf("%d valores positivos\n",positive);
+    return 0;
+}

@@ -1,0 +1,30 @@
+//1149 - Summing Consecutive Integers
+#include<stdio.h>
+int main()
+{
+    int m,n,i,sum=0;
+    while(1)
+    {
+        scanf("%d%d",&m,&n);
+        if(n<=0)
+        {
+            while(1)
+            {
+                scanf("%d",&n);
+                if(n>0)
+                    break;
+                else
+                    continue;
+            }
+        }
+        for(i=m; i<m+n; i++)
+        {
+            sum+=i;
+
+        }
+        printf("%d\n",sum);
+        break;
+    }
+
+    return 0;
+}

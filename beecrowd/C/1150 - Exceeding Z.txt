@@ -1,0 +1,29 @@
+//1150 - Exceeding Z
+#include<stdio.h>
+int main()
+{
+    int x,y,i,count=0,sum=0;
+    scanf("%d",&x);
+    while(1)
+    {
+        scanf("%d",&y);
+        if(y>x)
+            break;
+        else
+            continue;
+    }
+    for(i=x; ; i++)
+    {
+        sum+=i;
+        count++;
+        if(sum>y)
+            break;
+        else
+            continue;
+
+    }
+    printf("%d\n",count);
+
+    return 0;
+}
+

@@ -1,0 +1,47 @@
+
+//1144 - Logical Sequence
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,i,j,k,l=1,x;
+    scanf("%d",&n);
+    for(i=1; i<=n; i++)
+    {
+        for(j=1; j<=2; j++)
+        {
+            for(k=1; k<=3; k++)
+            {
+                if(j==1)
+                {
+                    x=pow(l,k);
+
+                }
+                else
+                {
+                    if(k==1)
+                        x=pow(l,k);
+                    else
+                        x=pow(l,k)+1;
+                }
+
+
+
+                if(k==1)
+                {
+                    printf("%d",x);
+                }
+                else
+                {
+                    printf(" %d",x);
+                }
+
+            }
+            printf("\n");
+
+        }
+        l++;
+    }
+
+    return 0;
+}

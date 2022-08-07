@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j,k,layer,x,y;
+    while(1)
+    {
+        scanf("%d",&n);
+        if(n==0)
+            break;
+        int z[n][n];
+        if(n%2==0)
+            layer=n/2;
+        else
+            layer=(n/2)+1;
+        x=0;
+        y=n;
+        for(k=1; k<=layer; k++)
+        {
+            for(i=x; i<y; i++)
+            {
+                for(j=x; j<y; j++)
+                {
+                    z[i][j]=k;
+                }
+            }
+            x++;
+            y--;
+        }
+        for(i=0; i<n; i++)
+        {
+            for(j=0; j<n; j++)
+            {
+                if(j==0)
+                    printf("%3d",z[i][j]);
+                else
+                    printf(" %3d",z[i][j]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    return 0;
+}

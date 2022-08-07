@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float income,tax1,tax2,tax3,total_tax;
+    scanf("%f",&income);
+    float salary[4]= {0.00,2000.00,3000.00,4500.00};
+    if(income<=2000.00)
+        printf("Isento\n");
+    else
+    {
+        if(income>=salary[1]&&income<=salary[2])
+        {
+            income=income-2000.00;
+            tax1=income*(8/100.00);
+            total_tax=tax1;
+        }
+        else if(income>=salary[2]&&income<=salary[3])
+        {
+            income=income-3000.00;
+            tax1=1000*(8.0/100);
+            tax2=income*(18/100.00);
+            total_tax=tax1+tax2;
+
+
+        }
+        else
+        {
+            income=income-4500.00;
+            tax1=1000*(8.0/100);
+            tax2=1500*(18/100.00);
+            tax3=income*(28.0/100);
+            total_tax=tax1+tax2+tax3;
+
+
+        }
+
+        printf("R$ %.2f\n",total_tax);
+
+    }
+    return 0;
+}
+
+//1051 - Taxes

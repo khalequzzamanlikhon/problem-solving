@@ -1,0 +1,25 @@
+
+//1145 - Logical Sequence 2
+#include<stdio.h>
+int main()
+{
+    int x,y,i,count=0;
+    scanf("%d%d",&x,&y);
+    for(i=1; i<=y; i++)
+    {
+        count++;
+        if(count==1){
+             printf("%d",i);
+        }
+        else
+            printf(" %d",i);
+
+        if(count==x)
+        {
+            printf("\n");
+            count=0;
+        }
+    }
+
+    return 0;
+}

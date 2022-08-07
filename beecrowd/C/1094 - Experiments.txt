@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,total=0,frog=0,rat=0,rabit=0,animal;
+    float rat_per,frog_per,rabit_per;
+    char a[2],c='C',r='R',s='S';
+    scanf("%d",&n);
+    for(i=0; i<n;i++)
+    {
+        scanf("%d%s",&animal,a);
+        total+=animal;
+        if(a[0]==c)
+            rabit+=animal;
+        else if(a[0]==r)
+            rat+=animal;
+        else
+            frog+=animal;
+    }
+
+    rat_per=((rat*1.0)/total)*100;
+    frog_per=((frog*1.0)/total)*100;
+    rabit_per=((rabit*1.0)/total)*100;
+    printf("Total: %d cobaias\n",total);
+    printf("Total de coelhos: %d\n",rabit);
+    printf("Total de ratos: %d\n",rat);
+    printf("Total de sapos: %d\n",frog);
+    printf("Percentual de coelhos: %.2f %\nPercentual de ratos: %.2f %\nPercentual de sapos: %.2f %\n",rabit_per,rat_per,frog_per);
+
+
+    return 0;
+}
+
+//1094 - Experiments

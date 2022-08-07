@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int day,hour,minute,second;
+    char c1[2],c2[2],c3[2],c4[2],d1[10],d2[10];
+    int s_date,s_hr,s_min,s_sec;
+    int e_date,e_hr,e_min,e_sec;
+    scanf("%s %d",d1,&s_date);
+    scanf("%d%s%d%s%d",&s_hr,c1,&s_min,c2,&s_sec);
+    scanf("%s %d",d2,&e_date);
+    scanf("%d%s%d%s%d",&e_hr,&c3,&e_min,c4,&e_sec);
+    day=e_date-s_date;
+    if(e_hr<s_hr)
+    {
+        day--;
+        e_hr+=24;
+        hour=e_hr-s_hr;
+    }
+    else
+        hour=e_hr-s_hr;
+    if(e_min<s_min)
+    {
+        hour--;
+        e_min+=60;
+        minute=e_min-s_min;
+    }
+    else
+        minute=e_min-s_min;
+    if(e_sec<s_sec)
+    {
+        minute--;
+        e_sec+=60;
+        second=e_sec-s_sec;
+    }
+    else
+        second=e_sec-s_sec;
+    printf("%d dia(s)\n%d hora(s)\n",day,hour);
+    printf("%d minuto(s)\n%d segundo(s)\n",minute,second);
+    return 0;
+}
+

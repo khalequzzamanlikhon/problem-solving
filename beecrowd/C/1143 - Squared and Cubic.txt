@@ -1,0 +1,24 @@
+
+//1143 - Squared and Cubic
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,i,j,k=1,x;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        for(j=1; j<=3; j++)
+        {
+            x=pow(k,j);
+            if(j==1)
+            printf("%d",x);
+            else{
+                printf(" %d",x);
+            }
+        }
+        printf("\n");
+        k++;
+    }
+    return 0;
+}

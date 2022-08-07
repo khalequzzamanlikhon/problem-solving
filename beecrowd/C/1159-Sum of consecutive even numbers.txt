@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,count=0,sum=0;
+    while(1)
+    {
+
+        scanf("%d",&n);
+        if(n==0)
+            break;
+        else
+        {
+            while(1)
+            {
+                if(n%2==0)
+                {
+                    count++;
+                    sum+=n;
+                    n++;
+                    if(count==5)
+                        break;
+                    else
+                        continue;
+                }
+                else
+                {   n++;
+                    continue;
+                }
+            }
+            printf("%d\n",sum);
+            count=0;
+            sum=0;
+        }
+    }
+    return 0;
+}

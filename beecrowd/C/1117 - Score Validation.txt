@@ -1,0 +1,30 @@
+//1117 - Score Validation
+#include<stdio.h>
+int main()
+{
+    int count=0;
+    double x,average,sum=0;
+    while(1)
+    {
+
+        scanf("%lf",&x);
+        if(x>=0&&x<=10)
+        {
+            sum+=x;
+            count++;
+            if(count==2)
+            {
+                average=sum/2;
+                printf("media = %.2f\n",average);
+                break;
+            }
+            else
+                continue;
+        }
+        else
+            printf("nota invalida\n");
+    }
+
+
+    return 0;
+}

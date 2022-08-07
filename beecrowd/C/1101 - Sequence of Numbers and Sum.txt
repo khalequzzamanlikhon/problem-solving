@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int M,N,i,sum=0,min,max;
+    while(1)
+    {
+        scanf("%d%d",&M,&N);
+        if(M<=0||N<=0)
+
+            break;
+
+        else
+        {
+            sum=0;
+
+            if(M>N)
+            {
+                min=N;
+                max=M;
+
+            }
+            else
+            {
+                min=M;
+                max=N;
+            }
+            for(i=min; i<=max; i++)
+            {
+                printf("%d ",i);
+                sum+=i;
+            }
+            printf("Sum=%d\n",sum);
+
+        }
+
+    }
+    return 0;
+}
+
+//1101 - Sequence of Numbers and Sum

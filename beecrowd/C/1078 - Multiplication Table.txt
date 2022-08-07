@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int N,multiplication,i;
+    scanf("%d",&N);
+    for(i=1; i<=10; i++)
+    {
+        multiplication=i*N;
+        printf("%d x %d = %d\n",i,N,multiplication);
+    }
+    return 0;
+}
+
+//1078 - Multiplication Table

@@ -1,0 +1,19 @@
+
+//1142 - PUM
+#include<stdio.h>
+int main()
+{
+    int i,j,n,k=1;;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        for(j=k; j<=k+2; j++)
+        {
+            printf("%d ",j);
+
+        }
+        printf("PUM\n");
+        k+=4;
+    }
+    return 0;
+}
