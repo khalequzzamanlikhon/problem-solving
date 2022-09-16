@@ -1,0 +1,21 @@
+while 1:
+    try:
+        n=int(input())
+        speed=input().split()
+        s=list(map(int,speed))
+        l=len(s)
+        faster=s[0]
+        for i in range(1,l):
+            if s[i]>faster:
+                faster=s[i]
+
+        if faster<10:
+            level=1
+        elif faster>=10 and faster<20:
+            level=2
+        else:
+            level=3
+        print(level)
+    except EOFError:
+        break
+#1789 - The Race of Slugs

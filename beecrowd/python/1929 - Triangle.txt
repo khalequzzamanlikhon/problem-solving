@@ -1,0 +1,20 @@
+def verification(a,b,c):
+   if a+b>c and b+c>a and c+a>b:
+       flag=1
+   else:
+       flag=0
+   return flag
+
+a,b,c,d=map(int,input().split())
+r1=verification(a,b,c)
+r2=verification(b,c,d)
+r3=verification(a,c,d)
+r4=verification(a,b,d)
+if r1==1 or r2==1 or r3==1 or r4==1:
+    print("S")
+else:
+    print("N")
+
+
+
+

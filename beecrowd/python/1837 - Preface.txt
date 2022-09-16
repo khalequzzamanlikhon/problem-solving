@@ -1,0 +1,11 @@
+inn = input().split()
+a, b = list(map(int, inn))
+m=abs(b)
+for i in range(m):
+    if int((a-i)%b)==0:
+        q=int((a-i)/b)
+        r=i
+        break
+print(q,r)
+
+

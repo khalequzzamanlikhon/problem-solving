@@ -1,0 +1,4 @@
+n,l=list(map(int,input().split()))
+perimeter=n*l
+print(perimeter)
+#1959 - Regular Simple Polygons

@@ -1,0 +1,28 @@
+inn=int(input())
+r=[]
+
+#1957 - Converting to Hexadecimal
+while inn>=16:
+     result = (inn % 16)
+     r.append(result)
+     inn = int(inn/16)
+r.append(inn)
+f=[i for i in r[::-1]]
+for i in range(len(f)):
+    if f[i]>9:
+        if f[i]==10:
+            print("A",end='')
+        elif f[i]==11:
+            print("B",end='')
+        elif f[i] == 12:
+            print("C",end='')
+        elif f[i] == 13:
+            print("D",end='')
+        elif f[i] == 14:
+            print("E",end='')
+        elif f[i] == 15:
+            print("F",end='')
+    else:
+        print(f[i],end='')
+print("")
+

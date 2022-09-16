@@ -1,0 +1,18 @@
+scream="caw caw"
+count=0
+result=0
+while(1):
+    if count==3:
+        break
+    inn=input()
+    if inn==scream:
+        count+=1
+        print(result)
+        result=0
+    else:
+        for i in range(3):
+            if inn[i]=="*":
+                result+=pow(2,(2-i))
+            elif inn[i]=="-":
+                result+=0
+
