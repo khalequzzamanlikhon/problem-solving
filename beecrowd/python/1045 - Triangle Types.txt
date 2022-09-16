@@ -1,0 +1,46 @@
+a,b,c=input().split()
+a=float(a)
+b=float(b)
+c=float(c)
+if a>b and a>c:
+    max=a
+    if b>c:
+        mid=b
+        min=c
+    else:
+        mid=c
+        min=b
+elif b>a and b>c:
+    max=b
+    if(a>c):
+        mid=a
+        min=c
+    else:
+        mid=c
+        min=a
+else:
+    max=c
+    if(a>b):
+        mid=a
+        min=b
+    else:
+        mid=b
+        min=a
+a=max
+
+b=mid
+c=min
+if a >= b + c:
+     print("NAO FORMA TRIANGULO")
+elif (pow(a,2) == pow(b,2) + pow(c,2)):
+        print("TRIANGULO RETANGULO")
+elif (pow(a,2) > pow(b,2) + pow(c,2)):
+        print("TRIANGULO OBTUSANGULO")
+elif (pow(a,2) < pow(b,2) + pow(c,2)):
+         print("TRIANGULO ACUTANGULO")
+if (a == b and b == c):
+        print("TRIANGULO EQUILATERO")
+elif (a == b or b == c):
+        print("TRIANGULO ISOSCELES")
+
+

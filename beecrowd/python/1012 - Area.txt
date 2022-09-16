@@ -1,0 +1,17 @@
+A,B,C=input().split()
+A=float(A)
+B=float(B)
+C=float(C)
+pi=3.14159
+TRIANGULO=1/2*(A*C)
+CIRCULO=pi*pow(C,2)
+TRAPEZIO=1/2*((A+B)*C)
+QUADRADO=pow(B,2)
+RETANGULO=A*B
+print('TRIANGULO: {:.3F}'.format(TRIANGULO))
+print('CIRCULO: {:.3F}'.format(CIRCULO))
+print('TRAPEZIO: {:.3F}'.format(TRAPEZIO))
+print('QUADRADO: {:.3F}'.format(QUADRADO))
+print('RETANGULO: {:.3F}'.format(RETANGULO))
+
+#1012 - Area

@@ -1,0 +1,21 @@
+code=int(input())
+city_code=[61,71,11,21,32,19,27,31]
+if code==city_code[0]:
+        print("Brasilia")
+elif code==city_code[1]:
+        print("Salvador")
+elif code==city_code[2]:
+        print("Sao Paulo")
+elif code == city_code[3]:
+        print("Rio de Janeiro")
+elif code == city_code[4]:
+    print("Juiz de Fora")
+elif code == city_code[5]:
+    print("Campinas")
+elif code == city_code[6]:
+    print("Vitoria")
+elif code == city_code[7]:
+    print("Belo Horizonte")
+else:
+    print("DDD nao cadastrado")
+

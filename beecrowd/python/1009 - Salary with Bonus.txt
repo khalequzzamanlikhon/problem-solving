@@ -1,0 +1,5 @@
+name=input()
+fixed=float(input())
+sale_amount=float(input())
+total=fixed+(sale_amount*15)/100
+print('TOTAL = R$ {:.2f}'.format(total))

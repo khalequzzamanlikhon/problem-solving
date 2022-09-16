@@ -1,0 +1,8 @@
+positive_count=0
+numbers=[]
+for i in range(6):
+    a=input()
+    numbers.append(a)
+    if float(numbers[i])>=0:
+        positive_count+=1
+print(str(positive_count)+" valores positivos")

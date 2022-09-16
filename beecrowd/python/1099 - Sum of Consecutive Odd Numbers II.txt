@@ -1,0 +1,28 @@
+sum=0
+N=int(input())
+for i in range(N):
+    x,y=input().split()
+    x=int(x)
+    y=int(y)
+    if x>y:
+        if y % 2 == 0:
+            m = y + 1
+        else:
+            m = y + 2
+        while (m < x):
+            sum += m
+            m += 2
+        print(sum)
+        sum=0
+    else:
+        if x % 2 == 0:
+            m = x + 1
+        else:
+            m = x + 2
+        while (m < y):
+            sum += m
+            m += 2
+        print(sum)
+        sum=0
+
+

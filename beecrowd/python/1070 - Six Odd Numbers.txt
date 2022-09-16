@@ -1,0 +1,10 @@
+n=int(input())
+if n%2==0:
+    n+=1
+    x=n
+else:
+    x=n
+for i in range(x,(x+12),2):
+    print(i)
+
+

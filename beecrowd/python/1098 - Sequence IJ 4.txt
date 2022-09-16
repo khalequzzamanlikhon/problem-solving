@@ -1,0 +1,20 @@
+a=0.0
+b=1.0
+for i in range(11):
+    for j in range(3):
+        c=a+b
+        if i==0 or i==5:
+            m=int(a)
+            n=int(c)
+            print("I="+str(m)+" J="+str(n))
+        elif i==10:
+            m = int(a)+1
+            n = int(c)
+            print("I=" + str(m) + " J=" + str(n))
+        else:
+            print('I={:.1f}'.format(a)+' J={:.1f}'.format(c))
+        b+=1
+    a+=.2
+    c=0
+    b=1
+

@@ -1,0 +1,20 @@
+input=float(input())
+tax=0
+if input>=0.00 and input<=2000.00:
+    tax+=0
+elif input >= 2000.00 and input <= 3000.00:
+    tax+=(input-2000)*(8/100.0)
+elif input>=3000.00 and input<=4500.00:
+    t1=1000.0*(8/100.00)
+    t2=(input-3000.00)*(18/100.0)
+    tax+=t1+t2;
+else:
+    t1 = 1000.0 * (8.00 / 100.00)
+    t2 = 1500.0* (18.00 / 100.0)
+    t3=(input-4500.00)*(28.00/100.00)
+    tax+=t1+t2+t3
+if(input<2000.0):
+    print("Isento")
+elif(input>2000.0):
+    print('R$ {:.2f}'.format(tax))
+

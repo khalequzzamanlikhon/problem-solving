@@ -1,0 +1,5 @@
+n=int(input())
+if n>=1 and n<=1000:
+    for i in range(n+1):
+        if i%2!=0:
+            print(i)

@@ -1,0 +1,9 @@
+start,end=input().split()
+start=int(start)
+end=int(end)
+if start<end:
+    duration=end-start
+    print("O JOGO DUROU "+str(duration)+" HORA(S)")
+else:
+    duration=(end+24)-start
+    print("O JOGO DUROU "+str(duration)+" HORA(S)")

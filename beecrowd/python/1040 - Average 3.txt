@@ -1,0 +1,23 @@
+a,b,c,d=input().split()
+a=float(a)
+b=float(b)
+c=float(c)
+d=float(d)
+media=(a*2+b*3+c*4+d)/10.0
+print("Media: "+'{:.1f}'.format(media))
+if(media>=7.0):
+    print("Aluno aprovado.")
+elif media>=5.0:
+    print("Aluno em exame.")
+    exm_score=float(input())
+    print("Nota do exame: "+'{:.1f}'.format(exm_score))
+    new_media=(media+exm_score)/2.0
+    if new_media>=5.0:
+        print("Aluno aprovado.")
+    elif new_media<4.99:
+        print("Aluno reprovado.")
+    print("Media final: "+'{:.1f}'.format(new_media))
+
+else:
+    print("Aluno reprovado.")
+

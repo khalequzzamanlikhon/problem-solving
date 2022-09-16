@@ -1,0 +1,16 @@
+i_hour,i_minute,f_hour,f_minute=input().split()
+i_hour=int(i_hour)
+i_minute=int(i_minute)
+f_hour=int(f_hour)
+f_minute=int(f_minute)
+duration_hour=f_hour-i_hour
+duration_minute=f_minute-i_minute
+if duration_hour<0:
+    duration_hour+=24
+if duration_minute<0:
+    duration_minute+=60
+    duration_hour=duration_hour-1
+if(duration_hour==0 and duration_minute==0):
+    duration_hour=duration_hour+24
+
+print("O JOGO DUROU "+str(duration_hour)+" HORA(S) E "+str(duration_minute)+" MINUTO(S)")

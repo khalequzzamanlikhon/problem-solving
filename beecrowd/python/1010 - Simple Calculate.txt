@@ -1,0 +1,13 @@
+total=0
+for i in range(2):
+    code, unit, price = input().split()
+    code=int(code)
+    unit=int(unit)
+    price=float(price)
+    total=total+(unit*price)
+
+print('VALOR A PAGAR: R$ {:.2f}'.format(total))
+
+
+
+

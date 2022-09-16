@@ -1,0 +1,10 @@
+positive=0
+sum=0
+for i in range(6):
+    number=float(input())
+    if number>=0:
+        sum+=number
+        positive+=1
+avg=sum/positive
+print(str(positive)+" valores positivos")
+print('{:.1f}'.format(avg))

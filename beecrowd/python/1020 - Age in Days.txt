@@ -1,0 +1,7 @@
+from math import *
+input=int(input())
+years=floor(input/365)
+input=input%365
+months=floor(input/30)
+days=input%30
+print(str(years)+" ano(s)\n"+str(months)+" mes(es)\n"+str(days)+" dia(s)")
