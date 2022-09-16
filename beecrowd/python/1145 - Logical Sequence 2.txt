@@ -1,0 +1,12 @@
+x,y = input().split()
+x = int(x)
+y = int(y)
+m=int(y/x)
+a=1
+for i in range(1,m+1):
+    for j in range(x):
+        if j!=x-1:
+            print(a, end=' ')
+        else:
+            print(a)
+        a+=1

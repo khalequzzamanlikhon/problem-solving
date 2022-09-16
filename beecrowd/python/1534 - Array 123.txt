@@ -1,0 +1,40 @@
+while 1:
+    try:
+        n = int(input())
+        z = []
+        for i in range(n):
+            tmp = []
+            for j in range(n):
+                tmp.append(1)
+            z.append(tmp)
+        a = 1
+        b = 2
+        c = 3
+        for i in range(n):
+            for j in range(n):
+                if i == n - (j + 1):
+                    z[i][j] = b
+                elif i == j:
+                    z[i][j] = a
+                else:
+                    z[i][j] = c
+        for i in range(n):
+            for j in range(n):
+                if j != n - 1:
+                    print(z[i][j], end='')
+                else:
+                    print(z[i][j])
+
+
+    except EOFError:
+        break
+
+
+
+
+
+
+
+
+
+

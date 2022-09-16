@@ -1,0 +1,18 @@
+count=0
+sum = 0
+while 1:
+    x = float(input())
+    if x>=0 and x<=10:
+        sum+=x
+        count+=1
+        if count==2:
+            avg = sum/2
+            print('media = {:.2f}'.format(avg))
+            count = 0
+            sum = 0
+            break
+        else:
+            continue
+
+    else:
+        print("nota invalida")

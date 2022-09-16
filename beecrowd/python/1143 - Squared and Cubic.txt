@@ -1,0 +1,13 @@
+from math import *
+a = int(input())
+b=1
+for i in range(a):
+   for j in range(3):
+       c=int(pow(b,j+1))
+       if j!=2:
+           print(c,end=' ')
+       else:
+            print(c)
+   b+=1
+
+

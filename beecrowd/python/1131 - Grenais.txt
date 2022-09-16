@@ -1,0 +1,42 @@
+g_count=0
+i_count=0
+draw=0
+event=0
+flag=0
+while 1:
+    i,g= input().split()
+    i = int(i)
+    g = int(g)
+    event+=1
+    if g>i:
+        g_count+=1
+    elif g<i:
+        i_count+=1
+    else:
+        draw+=1
+    print("Novo grenal (1-sim 2-nao)")
+    while 1:
+        decision = int(input())
+        if decision == 1:
+            flag=0
+            break
+        elif decision ==2:
+            flag=1
+            break
+        else:
+            print("Novo grenal (1-sim 2-nao)")
+
+    if flag==0:
+        continue
+    else:
+        print(str(event)+" grenais")
+        print("Inter:"+str(i_count))
+        print("Gremio:"+str(g_count))
+        print("Empates:" + str(draw))
+        if g_count>i_count:
+            print("Gremio venceu mais")
+        elif g_count<i_count:
+            print("Inter venceu mais")
+        else:
+            print("Não houve vencedor")
+        break

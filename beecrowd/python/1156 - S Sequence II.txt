@@ -1,0 +1,6 @@
+s=0
+x=1
+for i in range(1,40,2):
+    s+=i/x
+    x*=2
+print('{:.2f}'.format(s))

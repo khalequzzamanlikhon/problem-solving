@@ -1,0 +1,12 @@
+count=0
+sum=0
+while 1:
+    age = int(input())
+    if age<0:
+        break
+    else:
+        count+=1
+        sum+=age
+        continue
+avg = float(sum)/count
+print('{:.2f}'.format(avg))

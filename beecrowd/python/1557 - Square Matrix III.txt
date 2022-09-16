@@ -1,0 +1,32 @@
+while 1:
+    n= int(input())
+    if n==0:
+        break
+    else:
+        z=[]
+        for i in range(n):
+            temp=[]
+            for j in range(n):
+                temp.append(1)
+            z.append(temp)
+        for i in range(n):
+            for j in range(n):
+                z[i][j]=pow(2,j+i)
+        max=z[0][0]
+        for i in range(1,n):
+            for j in range(1,n):
+                if z[i][j]>max:
+                    max=z[i][j]
+        length = 0
+        while max>=1:
+            max/=10
+            length+=1
+
+        for i in range(n):
+            for j in range(n):
+                z[i][j] = str(z[i][j])
+                while len(z[i][j]) < length:
+                    z[i][j] = ' ' + z[i][j]
+            M = ' '.join(z[i])
+            print(M)
+        print()

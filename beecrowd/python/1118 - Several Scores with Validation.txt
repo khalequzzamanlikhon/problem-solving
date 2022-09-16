@@ -1,0 +1,34 @@
+count=0
+sum = 0
+flag =0
+while 1:
+    x = float(input())
+    if x>=0 and x<=10:
+        sum+=x
+        count+=1
+        if count==2:
+            avg = sum/2
+            print('media = {:.2f}'.format(avg))
+            print("novo calculo (1-sim 2-nao)")
+            while 1:
+                decision = int(input())
+                if decision == 1:
+                    count = 0
+                    sum = 0
+                    flag = 0
+                    break
+                elif decision == 2:
+                    flag=1
+                    break
+                else:
+                    print("novo calculo (1-sim 2-nao)")
+                    continue
+            if flag==0:
+                continue
+            elif flag==1:
+                break
+        else:
+            continue
+
+    else:
+        print("nota invalida")

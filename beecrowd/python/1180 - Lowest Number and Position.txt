@@ -1,0 +1,14 @@
+x=[]
+n = int(input())
+a=list(map(int,input().split()))
+for i in range(n):
+    x.insert(i,a[i])
+min=x[0]
+position=0
+for i in range(1,n):
+    if x[i]<min:
+        min=x[i]
+        position=i
+print("Menor valor: "+str(min))
+print("Posicao: "+str(position))
+

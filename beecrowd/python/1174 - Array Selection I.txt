@@ -1,0 +1,9 @@
+N=[]
+for i in range(100):
+    x=float(input())
+    N.append(x)
+for i in range(100):
+    if N[i]<=10:
+        position=i
+        print("A"+str([position])+" = "+str(N[position]))
+

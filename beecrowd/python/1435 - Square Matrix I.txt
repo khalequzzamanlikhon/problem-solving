@@ -1,0 +1,31 @@
+while 1:
+    n = int(input())
+    if n==0:
+        break
+    else:
+        z=[]
+        for i in range(n):
+            a = []
+            for j in range(n):
+                a.append(1)
+            z.append(a)
+        layer=int(n/2)
+        if n%2==1:
+            layer+=1
+        x=0
+        y=n
+        for i in range(1,layer+1):
+
+            for j in range(x,y):
+
+                for k in range(x,y):
+
+                    z[j][k]=i
+            x+=1
+            y-=1
+        for i in range(n):
+            t=""
+            for j in range(n):
+                t+=" %3d"%z[i][j]
+            print(t[1:])
+        print("")

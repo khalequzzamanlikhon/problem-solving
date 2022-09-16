@@ -1,0 +1,9 @@
+n = int(input())
+N=[]
+N.append(n)
+for i in range(9):
+    x = n*2
+    N.append(x)
+    n=x
+for j,m in enumerate(N,start=0):
+    print("N"+str([j])+" =",m)

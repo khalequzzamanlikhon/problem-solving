@@ -1,0 +1,12 @@
+x = []
+for i in range(10):
+    n=int(input())
+    if n<=0:
+        n=1
+        x.append(n)
+    else:
+        x.append(n)
+for j,m in enumerate(x,start=0):
+    print("X"+str([j])+" =",m)
+
+

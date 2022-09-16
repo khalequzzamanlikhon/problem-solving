@@ -1,0 +1,10 @@
+n = int(input())
+x= []
+j=0
+for i in range(1000):
+    x.append(j)
+    j+=1
+    if j==n:
+        j=0
+for k,m in enumerate(x,start=0):
+     print("N"+str([k])+" = "+str(m))

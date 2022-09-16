@@ -1,0 +1,13 @@
+o = input()
+sum=0
+for i in range(12):
+    for j in range(12):
+        x = float(input())
+        if i>j:
+            sum+=x
+if o=="S":
+    print("{:.1f}".format(sum))
+elif o=="M":
+    avg=sum/66
+    print("{:.1f}".format(avg))
+

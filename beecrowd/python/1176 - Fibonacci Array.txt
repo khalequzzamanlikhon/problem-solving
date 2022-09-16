@@ -1,0 +1,19 @@
+n = int(input())
+for i in range(n):
+    x = int(input())
+    first=0
+    second=1
+    new=0
+    if x==0:
+        print("Fib("+str(0)+")"+" = "+str(first))
+        continue
+    elif x==1:
+        print("Fib(" + str(1) + ")" + " = " + str(second))
+        continue
+    else:
+        for j in range(2, x+1):
+            new = first + second
+            first = second
+            second = new
+        print("Fib(" + str(j) + ")" + " = " + str(new))
+
